@@ -116,6 +116,19 @@ class Snake:
         state = ((r * self.__width + c) * state_map) % self.n_states
         
         return state, r, False
-        
 
+    @property
+    def board(self) -> np.array:
+        '''get a copy of the board'''
+        return np.copy(self.__board)
+
+    @property
+    def height(self) -> int:
+        '''get the height'''
+        return self.__height
+
+    @property
+    def width(self) -> int:
+        '''get the width'''
+        return self.__width
         
