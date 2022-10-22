@@ -38,5 +38,5 @@ def play_via_gui():
 
 
 if __name__ == '__main__':
-    # play_via_console()
+    # wplay_via_console()
     play_via_gui()
